@@ -1,0 +1,14 @@
+<div fxLayout="row wrap">
+  <div fxFlexOffset="15" fxFlex="70">
+    <br>
+    <a style="color: dodgerblue;font-size: xxx-large">
+      {{ article.title }}
+    </a>
+    <br>
+    <a style="color: gray">
+      Written on {{ article.time }}, By {{ article.writer }}
+    </a>
+    <mat-divider></mat-divider>
+  </div>
+  <markdown [data]="article.content" katex fxFlexOffset="15" fxFlex="70"></markdown>
+</div>

@@ -1,0 +1,24 @@
+<mat-list fxLayout="row wrap">
+<!--  last 可以获取是否是最后一次-->
+  <mat-list-item *ngFor="let article of articles; let flag = last" fxFlex="70" fxFlexOffset="15">
+
+    <div mat-line>
+      <a mat-flat-button routerLink="/article/{{ article.id }}" style="color: dodgerblue; font-size: x-large">
+        {{ article.title }}
+      </a>
+    </div>
+
+    <div mat-line style="font-size: medium;color: gray">
+      Written on {{ article.time }}, By {{ article.writer }}
+    </div>
+
+    <div mat-line>
+      <a class="mat-body-strong" style="font-size: large">
+        {{ article.abstract }}
+      </a>
+    </div>
+
+    <mat-divider *ngIf="flag != true"></mat-divider>
+
+  </mat-list-item>
+</mat-list>
