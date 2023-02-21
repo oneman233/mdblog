@@ -2,11 +2,11 @@
 
 # 第三方库
 
-**后端**
+#### 后端
 
 * gin
 
-**前端**
+#### 前端
 
 * Angular Material
 * Angular Flex
@@ -19,7 +19,7 @@
 
 # 前端
 
-## Component
+#### Component
 
 Component|作用
 ---|---
@@ -29,7 +29,7 @@ Navbar|导航栏
 
 # 后端
 
-## 目录结构
+#### 目录结构
 
 ```console
 -backend
@@ -59,20 +59,12 @@ Navbar|导航栏
         getmarkdown.go
 ```
 
-## RESTful
+#### RESTful
 
 Url|Method|作用
 ---|---|---
 /v1/articles|GET|获取文章列表
 /v1/article/:id|GET|根据 ID 获取某篇文章
-
-# TODOs
-
-- [ ] 前端错误处理以及 404 页面设计
-- [ ] About页面设计
-- [ ] 评论模块开发
-- [ ] 文章排序
-- [ ] 搜索框
 
 # 效果图
 
